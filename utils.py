@@ -53,7 +53,7 @@ def build_model():
        Returns: Compiled LSTM model
     '''
     model = Sequential()
-    model.add(LSTM(32, input_shape=(50, 1)))
+    model.add(LSTM(2, input_shape=(50, 1)))
     model.add(Dense(1, activation='sigmoid'))
     # Display summary of model
     model.summary()
