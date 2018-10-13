@@ -5,7 +5,7 @@ from utils import build_model, generate_samples, model_plot
 
 np.random.seed(42)
 
-def main(length=40, num_epochs=20):
+def main(length=50, num_epochs=20):
     '''
     Build and train LSTM network to solve XOR problem
     '''
@@ -38,13 +38,13 @@ if __name__ == '__main__':
     parser.add_argument(
         '-l',
         '--length',
-        help='define binary string length (40 or -1)')
+        help='define binary string length (50 or -1)')
     args = parser.parse_args()
     if args.length == '50':
-        print("Generating binary strings of length 40")
+        print("Generating binary strings of length 50")
         main(length=50)
     elif args.length == '-1':
-        print("Generating binary strings of length b/w 1 and 40")
+        print("Generating binary strings of length b/w 1 and 50")
         main(length=-1)
     else:
         print('Invalid entry')
