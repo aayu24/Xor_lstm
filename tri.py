@@ -55,7 +55,7 @@ def generate_samples(length=50):
     train_size=data.shape[0]
     print(data.shape)
     print(train_size)
-    print(length)
+    #print(length)
     size=int(train_size*0.75)
 
     #splitting data in train and test sets
